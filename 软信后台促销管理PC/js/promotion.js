@@ -69,8 +69,6 @@ $(document).ready(function(){
 	});
 });
 
-
-
 //折扣栏中Box2中下拉列表
 $(document).ready(function(){
 	$(".dBox2boxList").click(function(){
@@ -112,5 +110,55 @@ $(document).ready(function(){
 	$(".dBox2boxOpen5").click(function(){
 		$("#boxList5").toggle();
 		$(".dBox2boxOpen5>img").toggle();
+	});
+});
+
+//点击新增按钮，显示优惠券（红包）盒子的内容
+$(document).ready(function(){
+	$(".CouponBtn").click(function(){
+		$(".coupBox").show();
+	});
+});
+$(document).ready(function(){
+	$(".Coupremove").click(function(){
+		$(".coupBox").hide();
+	});
+});
+$(document).ready(function(){
+	$(".Coupyes").click(function(){
+		$(".coupBox").hide();
+	});
+});
+
+//点击新增按钮，显示满X优惠盒子的内容
+$(document).ready(function(){
+	$(".reachBtn").click(function(){
+		$(".reachBox").show();
+	});
+});
+$(document).ready(function(){
+	$(".reachremove").click(function(){
+		$(".reachBox").hide();
+	});
+});
+$(document).ready(function(){
+	$(".reachyes").click(function(){
+		$(".reachBox").hide();
+	});
+});
+//点击新增按钮，显示赠送盒子的内容
+$(document).ready(function(){
+	$(".giveBtu").click(function(){
+		$(".giveBox").show();
+	});
+});
+$(document).ready(function(){
+	$(".giveremove").click(function(){
+		$(".giveBox").hide();
+	});
+});
+$(document).ready(function(){
+	$(".giveyes").click(function(){
+		$(".giveBox").hide();
 	});
 });

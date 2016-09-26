@@ -170,7 +170,7 @@
 		    						<input type="text" value="筛选搜索商品" onfocus="javascript:if(this.value=='筛选搜索商品')this.value='';"/>
 		    						<span class="cright"></span>
 		    						<span class="dropdown">  <!-- 模拟 select 的标记， -->
-			                            <input class="editor cs2one" type="text" value="店内分类" onfocus="javascript:if(this.value=='店内分类')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="editor" type="text" value="店内分类" onfocus="javascript:if(this.value=='店内分类')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                            <ul>   <!-- 列表菜单 -->
 				                            <li class="search" style="border: 1px solid #EEEEEE;">
@@ -188,7 +188,7 @@
 			                            </ul>
 		                            </span>	
 		                            <span class="dropdown">  <!-- 模拟 select 的标记， -->
-			                            <input class="editor cs2one" type="text" value="商品类目" onfocus="javascript:if(this.value=='商品类目')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="editor" type="text" value="商品类目" onfocus="javascript:if(this.value=='商品类目')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                            <ul>   <!-- 列表菜单 -->
 				                            <li class="search" style="border: 1px solid #EEEEEE;">
@@ -207,7 +207,7 @@
 		                            </span>	
 		                            <span class="cright"></span>
 		                            <span class="dropdown">  <!-- 模拟 select 的标记， -->
-			                            <input class="editor cs2one" type="text" value="批量减价" onfocus="javascript:if(this.value=='批量减价')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="editor" type="text" value="批量减价" onfocus="javascript:if(this.value=='批量减价')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                            <ul>   <!-- 列表菜单 -->
 				                            <li class="search" style="border: 1px solid #EEEEEE;">
@@ -951,6 +951,7 @@
 		    				<!--Box2中全部搜索商品结束-->
 		    			</div>
 		    			<!--Box2结束-->
+		    			</div >
 		    			<!--Box3开始-->
 		    			<div class="dBox3">
 		    				<div class="dBox3title">
@@ -1048,7 +1049,6 @@
 		    				</div>
 		    			</div>
 		    			<!--Box3结束-->
-		    		</div>
 		    		<!--折扣大盒子部分结束-->
 		    	</div>
 		    	<!--折扣部分结束-->
@@ -1057,14 +1057,14 @@
 		    		<div class="disctitle">
 		    			<span class="cright">促销工具</span>
 		    		    <span class="letterBlue">优惠券（红包）</span>
-		    		    <button class="" type='submit'>新增</button>   <!--新增按钮-->
+		    		    <button class="CouponBtn" type='submit'>新增</button>   <!--新增按钮-->
 		    		</div>
 		    		<!--商品券（红包）盒子部分开始-->
 		    		<div class="coupBox">
 		    			<div class="dBoxcolumn">
-		    				<a class="" herf=""><img src="img/delect1.png" align="center" /></a>
-		    				<span>折扣</span>
-		    				<a class="" herf=""><img src="img/yes.png" align="center" /></a>
+		    				<a class="Coupremove" herf=""><img src="img/delect1.png" align="center" /></a>
+		    				<span>商品券（红包）</span>
+		    				<a class="Coupyes" herf=""><img src="img/yes.png" align="center" /></a>
 		    			</div>
 		    			<div class="cBoxAll">
 		    				<form>
@@ -1160,12 +1160,12 @@
 		    					</fieldset>
 		    					<fieldset class="cBox5">
 		    						<span class="cright">使用范围</span>
-		    						<input type="text" value="店内商品" onfocus="javascript:if(this.value=='店内商品')this.value='';"/>
+		    						<input type="text" value="店内商品" style="width: 80px;" onfocus="javascript:if(this.value=='店内商品')this.value='';"/>
 		    						<span class="cright"></span>
 		    						商品指定
 		    						<label><input name="商品指定" type="radio" value="" />店内分类</label>
-		    						<span class="dropdown numberWidth">  <!-- 模拟 select 的标记， -->
-			                            <input class="editor cs2one" type="text" value="上新" onfocus="javascript:if(this.value=='上新')this.value='';"/> <!-- 显示当前值的输入框 -->
+		    						<span class="dropdown">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="上新" onfocus="javascript:if(this.value=='上新')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                            <ul>   <!-- 列表菜单 -->
 				                            <li class="search" style="border: 1px solid #EEEEEE;">
@@ -1184,14 +1184,14 @@
 		                            </span>	
 		                            <span class="cright"></span>
 		                            <label><input name="商品指定" type="radio" value="" />店内分类</label>
-		    						<span class="dropdown numberWidth">  <!-- 模拟 select 的标记， -->
-			                            <input class="editor cs2one" type="text" value="上新" onfocus="javascript:if(this.value=='上新')this.value='';"/> <!-- 显示当前值的输入框 -->
+		    						<span class="dropdown">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor cs2one" type="text" value="葡萄干" onfocus="javascript:if(this.value=='葡萄干')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                            <ul>   <!-- 列表菜单 -->
 				                            <li class="search" style="border: 1px solid #EEEEEE;">
 					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
 				                            </li>   <!-- 过滤输入的列表， -->
-				                            <li data-value=上新>上新</li>
+				                            <li data-value=葡萄干>葡萄干</li>
 				                            <li data-value=112>112</li>
 				                            <li data-value=223>223</li>
 				                            <li data-value=224>224</li>
@@ -1209,7 +1209,7 @@
 		                            <button type='submit'>选择</button>
 		    					</fieldset>
 		    					<fieldset class="cBox6">
-		    						<span class="cright">有效期</span>
+		    						<span class="cright letterSpace">有效期</span>
 		    						<label>
 		    							<input name="有效期" type="radio" value="" />
 		    							领取后
@@ -1226,7 +1226,6 @@
 		    					</fieldset>
 		    				</form>
 		    			</div>
-		    			<!---->
 		    		</div>
 		    		<!--商品券（红包）盒子部分结束-->
 		    		<!--优惠券管理部分开始-->
@@ -1251,7 +1250,7 @@
 		    					<li>商品券</li>
 		    					<li>开放领取</li>
 		    					<li>
-		    						<img src="img/couponR.png" align="center" style="background-size: 10px 10px;">
+		    						<img class="cBox3img" src="img/couponR.png" align="center">
 		    					</li>
 		    					<li>满159元减25元</li>
 		    					<li>6个商品</li>
@@ -1262,84 +1261,98 @@
 		    					</li>
 		    				</ul>
 		    				<ul class="cBox3Ul">
-		    					<li>商品券</li>
+		    					<li>店铺券</li>
 		    					<li>开放领取</li>
 		    					<li>
-		    						<img src="img/couponR.png" align="center" style="background-size: 15px 10px;">
+		    						<img class="cBox3img" src="img/couponB.png" align="center" style="background-size: 15px 10px;">
 		    					</li>
-		    					<li>满159元减25元</li>
-		    					<li>6个商品</li>
-		    					<li>3天</li>
+		    					<li>满45元件95折</li>
+		    					<li>店内商品</li>
+		    					<li>5天</li>
 		    					<li>
 		    						<img src="img/writeW.png" align="center">
 		    						<img src="img/1122.png" align="center">
 		    					</li>
 		    				</ul>
 		    				<ul class="cBox3Ul">
-		    					<li>商品券</li>
+		    					<li>包邮券</li>
 		    					<li>开放领取</li>
 		    					<li>
-		    						<img src="img/couponR.png" align="center" style="background-size: 15px 10px;">
+		    						<img class="cBox3img" src="img/couponR.png" align="center" style="background-size: 15px 10px;">
 		    					</li>
-		    					<li>满159元减25元</li>
-		    					<li>6个商品</li>
-		    					<li>3天</li>
+		    					<li>满199元包邮</li>
+		    					<li>3个分类</li>
+		    					<li>7天</li>
 		    					<li>
 		    						<img src="img/writeW.png" align="center">
 		    						<img src="img/1122.png" align="center">
 		    					</li>
 		    				</ul>
 		    				<ul class="cBox3Ul">
-		    					<li>商品券</li>
-		    					<li>开放领取</li>
+		    					<li>老客券</li>
+		    					<li>人工发放</li>
 		    					<li>
-		    						<img src="img/couponR.png" align="center" style="background-size: 15px 10px;">
+		    						<img class="cBox3img" src="img/couponB.png" align="center" style="background-size: 15px 10px;">
 		    					</li>
-		    					<li>满159元减25元</li>
-		    					<li>6个商品</li>
-		    					<li>3天</li>
-		    					<li>
-		    						<img src="img/writeW.png" align="center">
-		    						<img src="img/1122.png" align="center">
-		    					</li>
-		    				</ul>
-		    				<ul class="cBox3Ul">
-		    					<li>商品券</li>
-		    					<li>开放领取</li>
-		    					<li>
-		    						<img src="img/couponR.png" align="center" style="background-size: 15px 10px;">
-		    					</li>
-		    					<li>满159元减25元</li>
-		    					<li>6个商品</li>
-		    					<li>3天</li>
+		    					<li>满59元减3元</li>
+		    					<li>5个商品</li>
+		    					<li>5.5~5.10</li>
 		    					<li>
 		    						<img src="img/writeW.png" align="center">
 		    						<img src="img/1122.png" align="center">
 		    					</li>
 		    				</ul>
 		    				<ul class="cBox3Ul">
-		    					<li>商品券</li>
+		    					<li>新客券</li>
 		    					<li>开放领取</li>
 		    					<li>
-		    						<img src="img/couponR.png" align="center" style="background-size: 15px 10px;">
+		    						<img class="cBox3img" src="img/couponR.png" align="center" style="background-size: 15px 10px;">
 		    					</li>
-		    					<li>满159元减25元</li>
-		    					<li>6个商品</li>
-		    					<li>3天</li>
+		    					<li>满19元减2元</li>
+		    					<li>3个类目</li>
+		    					<li>5.5~5.8</li>
 		    					<li>
 		    						<img src="img/writeW.png" align="center">
 		    						<img src="img/1122.png" align="center">
 		    					</li>
 		    				</ul>
 		    				<ul class="cBox3Ul">
-		    					<li>商品券</li>
+		    					<li>红包</li>
+		    					<li>人工发放</li>
+		    					<li>
+		    						<img class="cBox3img" src="img/6B80tmp.jpg" align="center" style="background-size: 15px 10px;">
+		    					</li>
+		    					<li>1元</li>
+		    					<li>店内商品</li>
+		    					<li>2天</li>
+		    					<li>
+		    						<img src="img/writeW.png" align="center">
+		    						<img src="img/1122.png" align="center">
+		    					</li>
+		    				</ul>
+		    				<ul class="cBox3Ul">
+		    					<li>SKU券</li>
 		    					<li>开放领取</li>
 		    					<li>
-		    						<img src="img/couponR.png" align="center" style="background-size: 15px 10px;">
+		    						<img class="cBox3img" src="img/couponR.png" align="center" style="background-size: 15px 10px;">
 		    					</li>
-		    					<li>满159元减25元</li>
-		    					<li>6个商品</li>
-		    					<li>3天</li>
+		    					<li>满3件98折</li>
+		    					<li>2个SKU</li>
+		    					<li>7天</li>
+		    					<li>
+		    						<img src="img/writeW.png" align="center">
+		    						<img src="img/1122.png" align="center">
+		    					</li>
+		    				</ul>
+		    				<ul class="cBox3Ul">
+		    					<li>跨店券</li>
+		    					<li>开放领取</li>
+		    					<li>
+		    						<img class="cBox3img" src="img/couponB.png" align="center" style="background-size: 15px 10px;">
+		    					</li>
+		    					<li>满1件减1元</li>
+		    					<li>店内商品</li>
+		    					<li>7天</li>
 		    					<li>
 		    						<img src="img/writeW.png" align="center">
 		    						<img src="img/1122.png" align="center">
@@ -1348,8 +1361,748 @@
 		    			</div>
 		    		</div>
 		    		<!--优惠券管理部分结束-->
-		    	</div>
+		        </div>
 		    	<!--商品券/红包部分结束-->
+		    	<!--满X优惠开始-->
+		    	<div class="reachMain">
+		    		<div class="disctitle">
+		    			<span class="cright">促销工具</span>
+		    		    <span class="letterBlue">满X优惠</span>
+		    		    <button class="reachBtn" type='submit'>新增</button>   <!--新增按钮-->
+		    		</div>
+		    		<!--满X优惠盒子开始-->
+		    		<div class="reachBox">
+		    			<div class="dBoxcolumn">
+		    				<a class="reachremove" herf=""><img src="img/delect1.png" align="center" /></a>
+		    				<span>满X优惠</span>
+		    				<a class="reachyes" herf=""><img src="img/yes.png" align="center" /></a>
+		    			</div>
+		    			<div class="rBoxAll">
+		    				<form>
+		    					<fieldset class="rBox1">
+		    						<span class="cright">促销类型</span>
+		    						<label><input name="促销类型" type="radio" value="" />满减</label>
+		    						<label><input name="促销类型" type="radio" value="" />打折</label>
+		    						<span class="cright pleft200px">促销级别</span>
+		    						<label><input name="促销级别" type="radio" value="" />商品</label>
+		    						<label><input name="促销级别" type="radio" value="" />本店</label>
+		    						<label><input name="促销级别" type="radio" value="" />跨店</label>
+		    					</fieldset>
+		    					<fieldset class="rBox2">
+		    						<span class="cright">优惠方式</span>
+		    						满<input class="numberWidth" type="text" value="159" onfocus="javascript:if(this.value=='159')this.value='';"/>
+		    						<span class="dropdown Width63px" style="z-index: 13;">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="元" onfocus="javascript:if(this.value=='元')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=元>元</li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=36>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>	
+		                            <span class="cright"></span>
+		                            <span class="dropdown Width63px" style="z-index: 13;">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="打折" onfocus="javascript:if(this.value=='打折')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=打折>打折</li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=36>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>
+		                            <input class="numberWidth" type="text" value="95" onfocus="javascript:if(this.value=='95')this.value='';"/>
+		    						<span class="dropdown Width63px" style="z-index: 13;">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="折" onfocus="javascript:if(this.value=='折')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=折>折</li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=36>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>
+		                            <img src="img/addlitter.png" align="center">
+		                            <img src="img/AFD3tmp.png" align="center">
+		                            条件：元条件，方式：减钱/打折，优惠：元或折
+		                            <br />
+		                            <div class="gBox2one">
+		                            <span class="cright pleft55px">2</span>
+		                            满<input class="numberWidth" type="text" value="259" onfocus="javascript:if(this.value=='259')this.value='';"/>
+		    						<span class="dropdown Width63px" style="z-index: 12;">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="元" onfocus="javascript:if(this.value=='元')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=元>元</li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=36>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>	
+		                            <span class="cright"></span>
+		                            <span class="dropdown Width63px" style="z-index: 12;">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="打折" onfocus="javascript:if(this.value=='打折')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=打折>打折</li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=36>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>
+		                            <input class="numberWidth" type="text" value="90" onfocus="javascript:if(this.value=='90')this.value='';"/>
+		    						<span class="dropdown Width63px" style="z-index: 12;">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="折" onfocus="javascript:if(this.value=='折')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=折>折</li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=36>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>
+		                            <img src="img/addlitter.png" align="center">
+		                            <img src="img/AFD3tmp.png" align="center">
+		                            <br />
+		                            </div>
+		                            <div class="rBox2two">
+		                            <span class="cright pleft55px">3</span>
+		                                                                                   满<input class="numberWidth" type="text" value="359" onfocus="javascript:if(this.value=='359')this.value='';"/>
+		    						<span class="dropdown Width63px" style="z-index: 11;">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="元" onfocus="javascript:if(this.value=='元')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=元>元</li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=36>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>	
+		                            <span class="cright"></span>
+		                            <span class="dropdown Width63px" style="z-index: 11;">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="打折" onfocus="javascript:if(this.value=='打折')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=打折>打折</li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=36>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>
+		                            <input class="numberWidth" type="text" value="85" onfocus="javascript:if(this.value=='85')this.value='';"/>
+		    						<span class="dropdown Width63px" style="z-index: 11;">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="折" onfocus="javascript:if(this.value=='折')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=折>折</li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=36>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>
+		                            <img style="padding-left: 28px;" class="" src="img/AFD3tmp.png" align="center">
+		                            </div>
+		    					</fieldset>
+		    					<fieldset class="rBox3">
+		    						<span class="cright">适用范围</span>
+		    						<span class="cright">本店所有商品</span>
+		    						商品指定
+		    						<label>
+		    							<input name="商品指定" type="radio" value="" />
+		    						             店内分类
+		    						    <span class="dropdown Width63px">  <!-- 模拟 select 的标记， -->
+			                                <input class="editor" type="text" value="上新" onfocus="javascript:if(this.value=='上新')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                                <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                                <ul>   <!-- 列表菜单 -->
+				                                <li class="search" style="border: 1px solid #EEEEEE;">
+					                                <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                                </li>   <!-- 过滤输入的列表， -->
+				                                <li data-value=上新>上新</li>
+				                                <li data-value=112>112</li>
+				                                <li data-value=223>223</li>
+				                                <li data-value=224>224</li>
+				                                <li data-value=335>335</li>
+				                                <li data-value=36>336</li>
+				                                <li data-value=447>447</li>
+				                                <li data-value=448>448</li>
+				                                <li data-value=559>559</li>
+			                                </ul>
+		                                </span>
+		    						</label>
+		    						<label>
+		    							<input name="商品类目" type="radio" value="" />
+		    						             店内分类
+		    						    <span class="dropdown">  <!-- 模拟 select 的标记， -->
+			                                <input class="editor" type="text" value="葡萄干" onfocus="javascript:if(this.value=='葡萄干')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                                <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                                <ul>   <!-- 列表菜单 -->
+				                                <li class="search" style="border: 1px solid #EEEEEE;">
+					                                <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                                </li>   <!-- 过滤输入的列表， -->
+				                                <li data-value=葡萄干>葡萄干</li>
+				                                <li data-value=112>112</li>
+				                                <li data-value=223>223</li>
+				                                <li data-value=224>224</li>
+				                                <li data-value=335>335</li>
+				                                <li data-value=36>336</li>
+				                                <li data-value=447>447</li>
+				                                <li data-value=448>448</li>
+				                                <li data-value=559>559</li>
+			                                </ul>
+		                                </span>
+		    						</label>
+		    						<label><input name="勾选商品" type="radio" value="" />勾选商品</label>
+		    						<span class="letterRed cright">6</span>
+		    						<button type='submit'>选择</button>
+		    					</fieldset>
+		    					<fieldset class="rBox4">
+		    						<span class="cright letterSpace">有效期</span>
+		    						<label>
+		    							<input name="有效期" type="radio" value="" />
+		    							明日起
+		    							<input class="numberWidth" type="text" value="7" onfocus="javascript:if(this.value=='7')this.value='';"/>
+		    							<span class="cright"></span>
+		    						</label>
+		    						<label>
+		    							<input name="有效期" type="radio" value="" />
+		    							固定    开始
+		    							<input style="width: 100px;" type="text" value="2016.5.5" onfocus="javascript:if(this.value=='2016.5.5')this.value='';"/>
+		    							<span class="cright"></span>
+		    							结束
+		    							<input style="width: 100px;" type="text" value="2016.5.10" onfocus="javascript:if(this.value=='2016.5.10')this.value='';"/>
+		    							提示：有效期设置范围（3~7天）
+		    						</label>
+		    					</fieldset>
+		    					<fieldset class="rBox5">
+		    						<span class="cright letterSpace">自动化</span>
+		    						<label><input name="自动化" type="radio" value="" />关</label>
+		    						<label><input name="自动化" type="radio" value="" />开</label>
+		    						<label>
+		    							<input name="自动化" type="radio" value="" />
+		    							间隔<input class="numberWidth" type="text" value="15" onfocus="javascript:if(this.value=='15')this.value='';"/>天
+		    						</label>
+		    					</fieldset>
+		    				</form>
+		    		    </div>
+		    		    </div>
+		    		    <!--满X优惠管理部分开始-->
+		    		    <div class="rBoxadm">
+		    				<div class="rBoxadmtitle">
+		    					<span class="cright">满X优惠管理</span>
+		    					6
+		    					<img src="img/trashW.png" align="center">
+		    					<img src="img/page.png" align="center">
+		    				</div>
+		    				<div class="rBox3Ulbox">
+		    					<ul class="rBox3Ultop">
+		    						<li>类型</li>
+		    						<li>自动化</li>
+		    						<li>优惠方式</li>
+		    						<li>适用范围</li>
+		    						<li>有效期</li>
+		    						<li><img src="img/1122.png" align="center"></li>
+		    					</ul>
+		    					<ul class="rBox3Ul">
+		    						<li>满减-本店</li>
+		    						<li>关</li>
+		    						<li>满159减25元</li>
+		    						<li>6个商品</li>
+		    						<li>3天</li>
+		    						<li>
+		    							<img src="img/writeW.png" align="center">
+		    							<img src="img/1122.png" align="center">
+		    						</li>
+		    					</ul>
+		    					<ul class="rBox3Ul">
+		    						<li>打折商品</li>
+		    						<li>间隔10天</li>
+		    						<li>满5件95折</li>
+		    						<li>店内商品</li>
+		    						<li>5天</li>
+		    						<li>
+		    							<img src="img/writeW.png" align="center">
+		    							<img src="img/1122.png" align="center">
+		    						</li>
+		    					</ul>
+		    					<ul class="rBox3Ul">
+		    						<li>打折-本店</li>
+		    						<li>间隔5天</li>
+		    						<li>满199元包邮</li>
+		    						<li>3个分类</li>
+		    						<li>7天</li>
+		    						<li>
+		    							<img src="img/writeW.png" align="center">
+		    							<img src="img/1122.png" align="center">
+		    						</li>
+		    					</ul>
+		    					<ul class="rBox3Ul">
+		    						<li>满减-跨店</li>
+		    						<li>间隔10天</li>
+		    						<li>满59减3元</li>
+		    						<li>5个商品</li>
+		    						<li>5.5~5.10</li>
+		    						<li>
+		    							<img src="img/writeW.png" align="center">
+		    							<img src="img/1122.png" align="center">
+		    						</li>
+		    					</ul>
+		    					<ul class="rBox3Ul">
+		    						<li>打折-跨店</li>
+		    						<li>间隔20天</li>
+		    						<li>满19减2元</li>
+		    						<li>2个类目</li>
+		    						<li>7天</li>
+		    						<li>
+		    							<img src="img/writeW.png" align="center">
+		    							<img src="img/1122.png" align="center">
+		    						</li>
+		    					</ul>
+		    					<ul class="rBox3Ul">
+		    						<li>减满-商品</li>
+		    						<li>间隔15天</li>
+		    						<li>满3件98折</li>
+		    						<li>2个类目</li>
+		    						<li>7天</li>
+		    						<li>
+		    							<img src="img/writeW.png" align="center">
+		    							<img src="img/1122.png" align="center">
+		    						</li>
+		    					</ul>
+		    					<ul class="rBox3Ul">
+		    						<li>满减-跨店</li>
+		    						<li>间隔30天</li>
+		    						<li>满一件减一元</li>
+		    						<li>店内商品</li>
+		    						<li>7天</li>
+		    						<li>
+		    							<img src="img/writeW.png" align="center">
+		    							<img src="img/1122.png" align="center">
+		    						</li>
+		    					</ul>
+		    				</div>
+		    			</div>
+		    		<!--满X优惠盒子结束-->
+		        </div>
+		        <!--满X优惠结束-->
+		        <!--赠送开始-->
+		        <div class="giveMain">
+		    		<div class="disctitle">
+		    			<span class="cright">促销工具</span>
+		    		    <span class="letterBlue">赠送</span>
+		    		    <button class="giveBtu" type='submit'>新增</button>   <!--新增按钮-->
+		    		</div>
+		    		<!--赠送盒子开始-->
+		    		<div class="giveBox">
+		    			<div class="dBoxcolumn">
+		    				<a class="giveremove" herf=""><img src="img/delect1.png" align="center" /></a>
+		    				<span>赠送</span>
+		    				<a class="giveyes" herf=""><img src="img/yes.png" align="center" /></a>
+		    			</div>
+		    			<div class="gBoxAll">
+		    				<form>
+		    					<fieldset class="gBox1">
+		    						<span class="cright">促销类型</span>
+		    						<label><input name="促销类型" type="radio" value="" />本次订单</label>
+		    						<label><input name="促销类型" type="radio" value="" />老客户</label>
+		    						<label><input name="促销类型" type="radio" value="" />新客户</label>
+		    						<span class="cright pleft200px">促销级别</span>
+		    						<label><input name="促销级别" type="radio" value="" />商品</label>
+		    						<label><input name="促销级别" type="radio" value="" />本店</label>
+		    						<label><input name="促销级别" type="radio" value="" />跨店</label>
+		    					</fieldset>
+		    					<fieldset class="gBox2">
+		    						<span class="cright">优惠方式</span>
+		    						满<input class="numberWidth" type="text" value="159" onfocus="javascript:if(this.value=='159')this.value='';"/>
+		    						<span class="dropdown Width63px" style="z-index: 13;">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="元" onfocus="javascript:if(this.value=='元')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=元>元</li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=36>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>	
+		                            <span class="cright"></span>
+		                                                                           赠送
+		                            <span class="dropdown" style="z-index: 13; width: 150px;">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="本品" onfocus="javascript:if(this.value=='本品')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=本品>本品 </li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=36>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>
+		                            <input class="numberWidth" type="text" value="1" onfocus="javascript:if(this.value=='95')this.value='';"/>件
+		                            <img src="img/addlitter.png" align="center">
+		                            <img src="img/AFD3tmp.png" align="center">
+		                            <span class="cright"></span>
+		                            条件：元条件，方式：送”本品“=买啥送啥
+		                            <br />
+		                            <div class="gBox2one">
+		                            <span class="cright pleft55px">2</span>
+		                            满<input class="numberWidth" type="text" value="199" onfocus="javascript:if(this.value=='199')this.value='';"/>
+		    						<span class="dropdown Width63px" style="z-index: 12;">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="元" onfocus="javascript:if(this.value=='元')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=元>元</li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=36>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>	
+		                            <span class="cright"></span>
+		                                                                            赠送
+		                            <span class="dropdown" style="z-index: 12; width: 150px;">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="新疆纸皮核桃" onfocus="javascript:if(this.value=='新疆纸皮核桃')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=新疆纸皮核桃>新疆纸皮核桃</li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=36>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>
+		                            <input class="numberWidth" type="text" value="2" onfocus="javascript:if(this.value=='2')this.value='';"/>包
+		                            <img src="img/addlitter.png" align="center">
+		                            <img src="img/AFD3tmp.png" align="center">
+		                            <br />
+		                            </div>
+		                            <div class="gBox2two">
+		                            <span class="cright pleft55px">3</span>
+		                                                                                   满<input class="numberWidth" type="text" value="259" onfocus="javascript:if(this.value=='259')this.value='';"/>
+		    						<span class="dropdown Width63px" style="z-index: 11;">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="元" onfocus="javascript:if(this.value=='元')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=元>元</li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=36>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>	
+		                            <span class="cright"></span>
+		                                                                           赠送
+		                            <span class="dropdown" style="z-index: 11; width: 150px;">  <!-- 模拟 select 的标记， -->
+			                            <input class="editor" type="text" value="新疆黑加仑葡萄干" onfocus="javascript:if(this.value=='新疆黑加仑葡萄干')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=新疆黑加仑葡萄干>新疆黑加仑葡萄干</li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=36>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>
+		                            <input class="numberWidth" type="text" value="1" onfocus="javascript:if(this.value=='1')this.value='';"/>袋
+		                            <img style="padding-left: 28px;" class="" src="img/AFD3tmp.png" align="center">
+		                            </div>
+		    					</fieldset>
+		    					<fieldset class="rBox3">
+		    						<span class="cright">适用范围</span>
+		    						<span class="cright">本店指定商品</span>
+		    						商品指定
+		    						<label>
+		    							<input name="商品指定" type="radio" value="" />
+		    						             店内分类
+		    						    <span class="dropdown Width63px">  <!-- 模拟 select 的标记， -->
+			                                <input class="editor" type="text" value="上新" onfocus="javascript:if(this.value=='上新')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                                <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                                <ul>   <!-- 列表菜单 -->
+				                                <li class="search" style="border: 1px solid #EEEEEE;">
+					                                <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                                </li>   <!-- 过滤输入的列表， -->
+				                                <li data-value=上新>上新</li>
+				                                <li data-value=112>112</li>
+				                                <li data-value=223>223</li>
+				                                <li data-value=224>224</li>
+				                                <li data-value=335>335</li>
+				                                <li data-value=36>336</li>
+				                                <li data-value=447>447</li>
+				                                <li data-value=448>448</li>
+				                                <li data-value=559>559</li>
+			                                </ul>
+		                                </span>
+		    						</label>
+		    						<label>
+		    							<input name="商品类目" type="radio" value="" />
+		    						             店内分类
+		    						    <span class="dropdown">  <!-- 模拟 select 的标记， -->
+			                                <input class="editor" type="text" value="葡萄干" onfocus="javascript:if(this.value=='葡萄干')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                                <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                                <ul>   <!-- 列表菜单 -->
+				                                <li class="search" style="border: 1px solid #EEEEEE;">
+					                                <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                                </li>   <!-- 过滤输入的列表， -->
+				                                <li data-value=葡萄干>葡萄干</li>
+				                                <li data-value=112>112</li>
+				                                <li data-value=223>223</li>
+				                                <li data-value=224>224</li>
+				                                <li data-value=335>335</li>
+				                                <li data-value=36>336</li>
+				                                <li data-value=447>447</li>
+				                                <li data-value=448>448</li>
+				                                <li data-value=559>559</li>
+			                                </ul>
+		                                </span>
+		    						</label>
+		    						<label><input name="勾选商品" type="radio" value="" />勾选商品</label>
+		    						<span class="letterRed cright">6</span>
+		    						<button type='submit'>选择</button>
+		    					</fieldset>
+		    					<fieldset class="rBox4">
+		    						<span class="cright letterSpace">有效期</span>
+		    						<label>
+		    							<input name="有效期" type="radio" value="" />
+		    							明日起
+		    							<input class="numberWidth" type="text" value="0" onfocus="javascript:if(this.value=='0')this.value='';"/>天
+		    							<span class="cright"></span>
+		    						</label>
+		    						<label>
+		    							<input name="有效期" type="radio" value="" />
+		    							固定    开始
+		    							<input style="width: 100px;" type="text" value="2016.5.5" onfocus="javascript:if(this.value=='2016.5.5')this.value='';"/>
+		    							<span class="cright"></span>
+		    							结束
+		    							<input style="width: 100px;" type="text" value="2016.5.10" onfocus="javascript:if(this.value=='2016.5.10')this.value='';"/>
+		    							提示：有效期设置范围（3~7天）
+		    						</label>
+		    					</fieldset>
+		    					<fieldset class="rBox5">
+		    						<span class="cright letterSpace">自动化</span>
+		    						<label><input name="自动化" type="radio" value="" />关</label>
+		    						<label><input name="自动化" type="radio" value="" />开</label>
+		    						<label>
+		    							<input name="自动化" type="radio" value="" />
+		    							间隔<input class="numberWidth" type="text" value="15" onfocus="javascript:if(this.value=='15')this.value='';"/>天
+		    						</label>
+		    					</fieldset>
+		    				</form>
+		    		   </div>
+		    		</div>
+		    		<!--赠送盒子结束-->
+		    		   <!--赠送优惠管理部分开始-->
+		    		    <div class="gBoxadm">
+		    				<div class="gBoxadmtitle">
+		    					<span class="cright">赠送管理</span>
+		    					6
+		    					<img src="img/trashW.png" align="center">
+		    					<img src="img/page.png" align="center">
+		    				</div>
+		    				<div class="gBox3Ulbox">
+		    					<ul class="gBox3Ultop">
+		    						<li>类型</li>
+		    						<li>自动化</li>
+		    						<li>优惠方式</li>
+		    						<li>适用范围</li>
+		    						<li>有效期</li>
+		    						<li><img src="img/1122.png" align="center"></li>
+		    					</ul>
+		    					<ul class="gBox3Ul">
+		    						<li>本次订单-本店</li>
+		    						<li>关</li>
+		    						<li>满159元送”贴膜“1张</li>
+		    						<li>6个商品</li>
+		    						<li>3天</li>
+		    						<li>
+		    							<img src="img/writeW.png" align="center">
+		    							<img src="img/1122.png" align="center">
+		    						</li>
+		    					</ul>
+		    					<ul class="gBox3Ul">
+		    						<li>老客户-商品</li>
+		    						<li>间隔5天</li>
+		    						<li>满195元送”本品“一件</li>
+		    						<li>3个分类</li>
+		    						<li>7天</li>
+		    						<li>
+		    							<img src="img/writeW.png" align="center">
+		    							<img src="img/1122.png" align="center">
+		    						</li>
+		    					</ul>
+		    					<ul class="gBox3Ul">
+		    						<li>老客户-本店</li>
+		    						<li>间隔10天</li>
+		    						<li>满5件送”新疆纸皮原味核桃“1包</li>
+		    						<li>店内商品</li>
+		    						<li>5天</li>
+		    						<li>
+		    							<img src="img/writeW.png" align="center">
+		    							<img src="img/1122.png" align="center">
+		    						</li>
+		    					</ul>
+		    					<ul class="gBox3Ul">
+		    						<li>新客户-跨店</li>
+		    						<li>间隔10天</li>
+		    						<li>满199送”新疆纸皮核桃“2包</li>
+		    						<li>5个商品</li>
+		    						<li>5.5~5.10</li>
+		    						<li>
+		    							<img src="img/writeW.png" align="center">
+		    							<img src="img/1122.png" align="center">
+		    						</li>
+		    					</ul>
+		    					<ul class="gBox3Ul">
+		    						<li>新客户-跨店</li>
+		    						<li>间隔20天</li>
+		    						<li>满259送”新疆黑加仑葡萄干“1袋</li>
+		    						<li>2个类目</li>
+		    						<li>5.5~5.8</li>
+		    						<li>
+		    							<img src="img/writeW.png" align="center">
+		    							<img src="img/1122.png" align="center">
+		    						</li>
+		    					</ul>
+		    					<ul class="gBox3Ul">
+		    						<li>当前订单-商品</li>
+		    						<li>间隔15天</li>
+		    						<li>满219元送”本品“1件</li>
+		    						<li>店内商品</li>
+		    						<li>2天</li>
+		    						<li>
+		    							<img src="img/writeW.png" align="center">
+		    							<img src="img/1122.png" align="center">
+		    						</li>
+		    					</ul>
+		    					<ul class="gBox3Ul">
+		    						<li>新客户-本店</li>
+		    						<li>间隔8天</li>
+		    						<li>满3件减送"本品”2件"</li>
+		    						<li>2个类目</li>
+		    						<li>7天</li>
+		    						<li>
+		    							<img src="img/writeW.png" align="center">
+		    							<img src="img/1122.png" align="center">
+		    						</li>
+		    					</ul>
+		    				</div>
+		    			</div>
+		    		<!--赠送优惠管理盒子结束-->
+		    		</div>
+		        <!--赠送结束-->
 		    </div>
 		    <!--“促销”大盒子结束-->
 		</div>

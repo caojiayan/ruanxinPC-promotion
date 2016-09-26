@@ -102,7 +102,7 @@ button{
     border-right-width: 0px; 
     border-bottom-width: 1px;
     border-left-width: 0px;
-    z-index: 9999;
+    z-index: 9;
 }
 .dropdown .editor {
 	display:block;
@@ -599,13 +599,13 @@ body{
 .dBox3Ultop,
 .cBox3Ultop{
 	background: #EEEEEE;
-	padding: 0 10px;
+	padding: 0 20px;
 	border-bottom: 1px solid #7D7D7D;
 }
 
 .dBox3Ul,
 .cBox3Ul{
-	padding: 0 10px;
+	padding: 0 20px;
 	border-bottom: 1px solid #7D7D7D;
 }
 
@@ -640,7 +640,7 @@ body{
 	border-radius: 20px;
 	box-shadow:5px 5px 5px 5px #EEEEEE;
 	background: #FFFFFF;
-	/*display: none;*/
+	display: none;
 }
 .cBoxAll fieldset{
 	margin-left: 15px;
@@ -649,13 +649,15 @@ body{
 .cBox3 label{
 	margin-left: 90px;
 }
-
+.couponMain{
+	/*display: none;*/
+}
 
 .cBox3Ultop li,
 .cBox3Ul li{
 	display: inline-block;
 	padding: 5px 0;
-	width: 140px;
+	width: 135px;
 	text-align:left;
 }
 .cBox3Ultop li:nth-of-type(2),
@@ -669,3 +671,112 @@ body{
 .cBox3Ultop li:last-child img{
 	padding-left: 30px;
 }
+.cBox3img{
+	width: 30px;
+	height: 20px;
+}
+/*商品券（红包）部分结束*/
+
+/*满X优惠开始*/
+/*赠送部分开始*/
+.reachMain fieldset
+.giveMain fieldset{
+	margin: 10px 0;
+}
+.reachBox,
+.giveBox{
+	width: 1000px;
+	margin:40px;
+	padding-bottom: 10px;
+	border-radius: 20px;
+	box-shadow:5px 5px 5px 5px #EEEEEE;
+	background: #FFFFFF;
+	display: none;
+}
+.rBoxAll fieldset,
+.gBoxAll fieldset{
+	margin-left: 15px;
+}
+.pleft55px{
+	margin-left: 55px;
+}
+.rBox2one,
+.gBox2one{
+	margin: 10px 0;
+}
+.rBox2two,
+.gBox2two{
+	margin-top:10px;
+}
+.Width63px{
+	width: 63px;
+}
+.pleft200px{
+	margin-left: 200px;
+}
+/*满X优惠管理*/
+/*赠送优惠管理*/
+.rBoxadm,
+.gBoxadm{
+	margin: 25px 40px;
+}
+.rBoxadmtitle,
+.gBoxadmtitle{
+	padding: 10px;
+}
+.rBoxadmtitle img,
+.gBoxadmtitle img{
+	float: right;
+	padding-left: 10px;
+	
+}
+.rBox3Ulbox,
+.gBox3Ulbox{
+	border: 1px solid #7D7D7D;
+}
+.rBox3Ultop,
+.gBox3Ultop{
+	background: #EEEEEE;
+	padding: 0 20px;
+	border-bottom: 1px solid #7D7D7D;
+}
+
+.rBox3Ul,
+.gBox3Ul{
+	padding: 0 20px;
+	border-bottom: 1px solid #7D7D7D;
+}
+
+.rBox3Ul:last-child,
+.rBox3Ul:last-child,
+.gBox3Ul:last-child,
+.gBox3Ul:last-child{
+	border-bottom:0;
+}
+.rBox3Ultop li,
+.rBox3Ul li,
+.gBox3Ultop li,
+.gBox3Ul li{
+	display: inline-block;
+	padding: 5px 0;
+	width: 140px;
+	text-align:left;
+}
+.rBox3Ultop li:nth-of-type(3),
+.rBox3Ul li:nth-of-type(3),
+.gBox3Ultop li:nth-of-type(3),
+.gBox3Ul li:nth-of-type(3){
+	width: 290px;
+}
+.rBox3Ultop li:last-child,
+.rBox3Ul li:last-child,
+.gBox3Ultop li:last-child,
+.gBox3Ul li:last-child{
+	width: 60px;
+}
+.rBox3Ultop li:last-child img,
+.gBox3Ultop li:last-child img{
+	padding-left: 30px;
+}
+/*满X优惠结束*/
+
