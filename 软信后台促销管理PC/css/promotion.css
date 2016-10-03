@@ -405,27 +405,38 @@ body{
 /*菜单栏部分*/
 .promoMenu{
 	border-bottom: 1px solid #7d7d7d;
+	width:1080px;
 }
-.promoMenu ul{
-	background: #FFFFFF;
+.box{
+	display: none;
 }
-.promoMenu ul li{
-	display: inline-block;
+.box.active{
+				display: block;
+}
+.list{
+	width:1080px;
+}                        
+.listtr td{
 	color: #7d7d7d;
 	text-align: center;
-	width:16.2%;
 	border-right: 1px solid #7d7d7d;
+	padding: 3px 0;
 }
-.promoMenu ul li:last-child{
-	border-right:0;
+.listtr td.active{
+	background: #EEE;
 }
-.promoMenu ul li:hover,
-.promoMenu ul li:visited{
-	background: #EEEEEE;
+.listtr td{
+	width: 181px;
 }
-.promoMenu ul li:first-child{
-	background: #EEEEEE;
+.logisticsBox  .logbox.active{
+    display: block;
 }
+.logisticsBox .logbox{
+	display: none;
+}
+
+
+
 /*折扣部分开始*/
 .promoMain fieldset{
 	margin: 10px 0;
@@ -443,7 +454,7 @@ body{
 	margin:40px;
 	padding-bottom: 10px;
 	border-radius: 20px;
-	box-shadow:5px 5px 5px 5px #EEEEEE;
+	box-shadow:3px 3px 40px #EEEEEE;
 	background: #FFFFFF;
 	display: none;
 }
@@ -550,11 +561,7 @@ body{
 	border: 1px solid #EEEEEE;
 	padding: 2px 10px;
 }
-.dBox2boxList:hover,
-.dBox2boxList:active,
-.dBox2boxList:visited{
-	background: #EEEEEE;
-}
+
 .dBox2boxList ul li{
 	display: inline-block;
 	width: 80px;
@@ -599,7 +606,7 @@ body{
 .dBox3Ultop,
 .cBox3Ultop{
 	background: #EEEEEE;
-	padding: 0 20px;
+	padding: 0 10px 0 20px;
 	border-bottom: 1px solid #7D7D7D;
 }
 
@@ -638,7 +645,7 @@ body{
 	margin:40px;
 	padding-bottom: 10px;
 	border-radius: 20px;
-	box-shadow:5px 5px 5px 5px #EEEEEE;
+	box-shadow:3px 3px 40px #EEEEEE;
 	background: #FFFFFF;
 	display: none;
 }
@@ -666,7 +673,8 @@ body{
 }
 .cBox3Ultop li:last-child,
 .cBox3Ul li:last-child{
-	width: 60px;
+	width: 70px;
+	text-align: right;
 }
 .cBox3Ultop li:last-child img{
 	padding-left: 30px;
@@ -689,7 +697,7 @@ body{
 	margin:40px;
 	padding-bottom: 10px;
 	border-radius: 20px;
-	box-shadow:5px 5px 5px 5px #EEEEEE;
+	box-shadow:3px 3px 40px #EEEEEE;
 	background: #FFFFFF;
 	display: none;
 }
@@ -734,6 +742,12 @@ body{
 .gBox3Ulbox{
 	border: 1px solid #7D7D7D;
 }
+
+.gBox3Ulboxone,
+.rBox3Ulboxtwo{
+	border-bottom: 1px solid #7D7D7D;
+}
+
 .rBox3Ultop,
 .gBox3Ultop{
 	background: #EEEEEE;

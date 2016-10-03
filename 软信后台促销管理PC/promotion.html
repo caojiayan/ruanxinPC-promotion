@@ -96,20 +96,23 @@
 		    <!--con1结束-->
 		    <!--菜单栏部分开始-->
 		    <div class="promoMenu">
-		    	<ul>
-		    		<li>折扣</li>
-		    		<li>优惠券（红包）</li>
-		    		<li>满X优惠</li>
-		    		<li>赠送</li>
-		    		<li>试用试吃</li>
-		    		<li>搭配</li>
-		    	</ul>
+		    	<table class="clearfix list">
+		    		<tbody></tbody>
+		    		<tr class="listtr">
+		    			<td class="active"><a href="#">折扣</a></td>
+		    			<td><a href="#">优惠券（红包）</a></td>
+		    			<td><a href="#">满X优惠</a></td>
+		    			<td><a href="#">赠送</a></td>
+		    			<td><a href="#">使用试吃</a></td>
+		    			<td><a href="#">搭配</a></td>
+		    		</tr>
+		    	</table>
 		    </div>
 		    <!--菜单栏部分结束-->
 		    <!--“促销”大盒子开始-->
 		    <div class="promoMain">
 		    	<!--折扣部分开始-->
-		    	<div class="proDiscount">
+		    	<div class="proDiscount box active">
 		    		<div class="disctitle">
 		    			<span class="cright">促销工具</span>
 		    		    <span class="letterBlue">折扣</span>
@@ -1053,7 +1056,7 @@
 		    	</div>
 		    	<!--折扣部分结束-->
 		    	<!--商品券/红包部分开始-->
-		    	<div class="couponMain">
+		    	<div class="couponMain box">
 		    		<div class="disctitle">
 		    			<span class="cright">促销工具</span>
 		    		    <span class="letterBlue">优惠券（红包）</span>
@@ -1364,7 +1367,7 @@
 		        </div>
 		    	<!--商品券/红包部分结束-->
 		    	<!--满X优惠开始-->
-		    	<div class="reachMain">
+		    	<div class="reachMain box">
 		    		<div class="disctitle">
 		    			<span class="cright">促销工具</span>
 		    		    <span class="letterBlue">满X优惠</span>
@@ -1702,12 +1705,17 @@
 		    						<li>间隔5天</li>
 		    						<li>满199元包邮</li>
 		    						<li>3个分类</li>
-		    						<li>7天</li>
-		    						<li>
+		    						<li style="width: 112px;">7天</li>
+		    						<li style="width: 90px;">
+		    							<a href="#" class="rBox3Ulinputtwo">
+		    								<img src="img/down.png" align="center" >
+		    								<img src="img/up.png" align="center" style="display: none;">
+		    							</a>
 		    							<img src="img/writeW.png" align="center">
 		    							<img src="img/1122.png" align="center">
 		    						</li>
 		    					</ul>
+		    					<div class="rBox3Ulboxtwo" style="display: none;">
 		    					<ul class="rBox3Ul">
 		    						<li>满减-跨店</li>
 		    						<li>间隔10天</li>
@@ -1719,6 +1727,18 @@
 		    							<img src="img/1122.png" align="center">
 		    						</li>
 		    					</ul>
+		    					<ul class="rBox3Ul">
+		    						<li>打折-跨店</li>
+		    						<li>间隔20天</li>
+		    						<li>满19减2元</li>
+		    						<li>5个类目</li>
+		    						<li>5.5~5.8</li>
+		    						<li>
+		    							<img src="img/writeW.png" align="center">
+		    							<img src="img/1122.png" align="center">
+		    						</li>
+		    					</ul>
+		    					</div>
 		    					<ul class="rBox3Ul">
 		    						<li>打折-跨店</li>
 		    						<li>间隔20天</li>
@@ -1758,7 +1778,7 @@
 		        </div>
 		        <!--满X优惠结束-->
 		        <!--赠送开始-->
-		        <div class="giveMain">
+		        <div class="giveMain box">
 		    		<div class="disctitle">
 		    			<span class="cright">促销工具</span>
 		    		    <span class="letterBlue">赠送</span>
@@ -2037,7 +2057,7 @@
 		    						<li>间隔5天</li>
 		    						<li>满195元送”本品“一件</li>
 		    						<li>3个分类</li>
-		    						<li>7天</li>
+		    						<li>5天</li>
 		    						<li>
 		    							<img src="img/writeW.png" align="center">
 		    							<img src="img/1122.png" align="center">
@@ -2048,13 +2068,18 @@
 		    						<li>间隔10天</li>
 		    						<li>满5件送”新疆纸皮原味核桃“1包</li>
 		    						<li>店内商品</li>
-		    						<li>5天</li>
-		    						<li>
+		    						<li style="width: 112px;">7天</li>
+		    						<li style="width: 90px;">
+		    							<a href="#" class="gBox3Ulinput">
+		    								<img src="img/up.png" align="center" style="display: none;">
+		    								<img src="img/down.png" align="center">
+		    							</a>
 		    							<img src="img/writeW.png" align="center">
 		    							<img src="img/1122.png" align="center">
 		    						</li>
 		    					</ul>
-		    					<ul class="gBox3Ul">
+		    					<div class="gBox3Ulboxone" style="display: none;">
+		    				    <ul class="gBox3Ul">
 		    						<li>新客户-跨店</li>
 		    						<li>间隔10天</li>
 		    						<li>满199送”新疆纸皮核桃“2包</li>
@@ -2076,6 +2101,7 @@
 		    							<img src="img/1122.png" align="center">
 		    						</li>
 		    					</ul>
+		    					</div>
 		    					<ul class="gBox3Ul">
 		    						<li>当前订单-商品</li>
 		    						<li>间隔15天</li>
@@ -2103,6 +2129,10 @@
 		    		<!--赠送优惠管理盒子结束-->
 		    		</div>
 		        <!--赠送结束-->
+		        <!--试用试吃部分-->
+		        <div class="tryout" style="height:200px;"></div>
+		        <!---->
+		        <div class="collocation" style="height:200px;"></div>
 		    </div>
 		    <!--“促销”大盒子结束-->
 		</div>

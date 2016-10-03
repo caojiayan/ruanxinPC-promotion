@@ -52,6 +52,16 @@
 				});
 			});
 
+//点击菜单栏，显示不同页面
+$(function(){
+			$('.listtr td').on('click',function(){
+				$('.listtr td').removeClass('active');
+				$(this).addClass('active');
+				$('.promoMain .box').removeClass('active');
+				$('.promoMain .box').eq($(this).index()).addClass('active');
+			});
+		});
+
 //点击新增按钮，显示折扣盒子的内容
 $(document).ready(function(){
 	$(".PromoBut").click(function(){
@@ -69,12 +79,6 @@ $(document).ready(function(){
 	});
 });
 
-//折扣栏中Box2中下拉列表
-$(document).ready(function(){
-	$(".dBox2boxList").click(function(){
-		$(".dBox2boxList input").css("background","#EEEEEE")
-	});
-});
 //点击按钮，展开下拉列表
 $(document).ready(function(){
 	$(".dBox2boxOpen1").click(function(){
@@ -160,5 +164,22 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$(".giveyes").click(function(){
 		$(".giveBox").hide();
+	});
+});
+
+//赠送管理
+$(document).ready(function(){
+	$(".gBox3Ulinput").click(function(){
+		$(".gBox3Ulboxone").toggle();
+		$(".gBox3Ulinput>img").toggle();
+		$(".gBox3Ulboxone").css("background","rgb(229,239,202)")
+	});
+});
+//满X优惠管理
+$(document).ready(function(){
+	$(".rBox3Ulinputtwo").click(function(){
+		$(".rBox3Ulboxtwo").toggle();
+		$(".rBox3Ulinputtwo>img").toggle();
+		$(".rBox3Ulboxtwo").css("background","rgb(229,239,202)")
 	});
 });
