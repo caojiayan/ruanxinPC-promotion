@@ -183,3 +183,107 @@ $(document).ready(function(){
 		$(".rBox3Ulboxtwo").css("background","rgb(229,239,202)")
 	});
 });
+
+//折扣管理部分
+//点击打钩\
+$(document).ready(function(){
+    $('.dBox3Ulbutton').click(function(){//给id为btn的元素添加点击事件
+    $(this).toggleClass('active');//每次点击的时候，将当前的元素切换active样式
+    });                              //如果有，则去掉，否则添加
+});
+
+$(function(){
+	$(".dBox3Ulimg").click(function(){
+		$("input[name='imageselelct']").toggle();
+	});
+});
+
+$(document).ready(function(){
+	$(".dBox3Ulimg").click(function(){
+		$(".dBox3Ulimg").toggle();
+	});
+});
+$(document).ready(function(){
+	$(".dBox3Ulimg1").click(function(){
+		$(".dBox3Ulimg1").toggle();
+	});
+});
+$(document).ready(function(){
+	$(".dBox3Ulimg2").click(function(){
+		$(".dBox3Ulimg2").toggle();
+	});
+});
+$(document).ready(function(){
+	$(".dBox3Ulimg3").click(function(){
+		$(".dBox3Ulimg3").toggle();
+	});
+});
+$(document).ready(function(){
+	$(".dBox3Ulimg4").click(function(){
+		$(".dBox3Ulimg4").toggle();
+	});
+});
+$(document).ready(function(){
+	$(".dBox3Ulimg5").click(function(){
+		$(".dBox3Ulimg5").toggle();
+	});
+});
+$(document).ready(function(){
+	$(".dBox3Ulimg6").click(function(){
+		$(".dBox3Ulimg6").toggle();
+	});
+});
+$(document).ready(function(){
+	$(".dBox3Ulimg7").click(function(){
+		$(".dBox3Ulimg7").toggle();
+	});
+});
+
+//满X优惠中的优惠方式中，点击按钮删除项
+//第三列
+$(function(){
+	$(".rBox2twodel").click(function(){
+		$(".rBox2two").hide();
+	});
+});
+//第二列
+$(function(){
+	$(".rBox2onedel").click(function(){
+		$(".rBox2one").hide();
+	});
+});
+$(function(){
+	$(".rBox2oneadd").click(function(){
+		$(".rBox2two").show();
+	})
+});
+//第一列
+$(function(){
+	$(".rBox2add").click(function(){
+		$(".rBox2one").show();
+	});
+});
+//赠送中的优惠方式中，点击按钮删除项
+//第三列
+$(function(){
+	$(".gBox2twodel").click(function(){
+		$(".gBox2two").hide();
+	});
+});
+//第二列
+$(function(){
+	$(".gBox2onedel").click(function(){
+		$(".gBox2one").hide();
+	});
+});
+$(function(){
+	$(".gBox2oneadd").click(function(){
+		$(".gBox2two").show();
+	})
+});
+//第一列
+$(function(){
+	$(".gBox2add").click(function(){
+		$(".gBox2one").show();
+	});
+});
