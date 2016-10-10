@@ -99,6 +99,15 @@ button{
 	border: #a0a0a0;
 	color:#FFFFFF;
 }
+/*去掉点击框时自带的颜色*/
+input:focus,
+button:focus{
+	outline: none ;
+}
+/*鼠标变成“手型”*/
+button{
+	cursor:pointer;
+}
 
 /*下拉框样式*/
 .dropdown {
@@ -118,7 +127,6 @@ button{
 	border:0;
 	padding:0;
 	width:100%;
-	/*box-shadow: inset 1px 2px 3px #ddd;*/
 	height:inherit;
 }
 .dropdown .trigger {
@@ -241,7 +249,17 @@ body{
 	margin-right: 10px;
 	background-size: 10px 10px;
 }
-
+/*遮盖层*/
+/*.maskingLayer{
+	display:none;  
+    background:#000;  
+    position:absolute;  
+    top:0;  
+    left:0;  
+    z-index:9999;  
+    opacity:0.5;                        /*背景的透明度:(Firefox适用； */
+    /*filter:alpha(opacity =50);        /*  背景的透明度:(IE适用)；  */
+}/*/
 
 /*header开始*/
 #libg {
@@ -659,15 +677,17 @@ body{
 }
 
 /*折扣部分结束*/
-/*商品券（红包）部分开始*/
-.coupBox{
+/*商品券部分开始*/
+/*红包部分开始*/
+.coupBox,
+.redpacketBox{
 	width: 1000px;
 	margin:40px;
 	padding-bottom: 10px;
 	border-radius: 20px;
 	box-shadow:3px 3px 40px #EEEEEE;
 	background: #FFFFFF;
-	display: none;
+	/*display: none;*/
 }
 .cBoxAll fieldset{
 	margin-left: 15px;
@@ -703,11 +723,42 @@ body{
 	width: 30px;
 	height: 20px;
 }
+/*红包管理*/
+.dBox3Table{
+	width: 1000px;
+}
+.dBox3Table table{
+	width: 1000px;
+	border: 1px solid #7D7D7D;
+}
+.dBox3Table table tr{
+	border-bottom: 1px solid #7d7d7d;
+}
+.dBox3Table table tr:first-child{
+	background: #EEEEEE;
+}
+.dBox3Table table tr td{
+	border-bottom: 1px solid #7d7d7d;
+	padding: 5px
+}
+.dBox3Table table tr td input{
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}	
+.dBox3Table table tr td:first-child{
+	padding-left: 10px;
+}
+.dBox3Table table tr td:last-child{
+	text-align: right;
+	padding-right: 10px;
+}
+
 /*商品券（红包）部分结束*/
 
 /*满X优惠开始*/
 /*赠送部分开始*/
-.reachMain fieldset
+.reachMain fieldset,
 .giveMain fieldset{
 	margin: 10px 0;
 }

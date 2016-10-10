@@ -69,6 +69,24 @@ $(document).ready(function(){
 	});
 });
 $(document).ready(function(){
+	$(".PromoWrite").click(function(){
+		$(".discBox").show();
+	});
+});
+//折扣中的遮盖层部分
+//$(function(){
+//	$(".PromoBut").click(function(){
+//		var bh = $("body").height();
+//      var bw = $("body").width();
+//      $(".maskingLayer").css({
+//          height:bh,
+//          width:bw,
+//          display:"block"
+//      });
+//		$(".discBox").show();
+//	});
+//});
+$(document).ready(function(){
 	$(".Promoremove").click(function(){
 		$(".discBox").hide();
 	});
@@ -169,6 +187,7 @@ $(document).ready(function(){
 
 //赠送管理
 $(document).ready(function(){
+	$(".gBox3Ulboxone").css("display","none"); //隐藏
 	$(".gBox3Ulinput").click(function(){
 		$(".gBox3Ulboxone").toggle();
 		$(".gBox3Ulinput>img").toggle();
@@ -177,6 +196,7 @@ $(document).ready(function(){
 });
 //满X优惠管理
 $(document).ready(function(){
+	$(".rBox3Ulboxtwo").css("display","none");  //隐藏
 	$(".rBox3Ulinputtwo").click(function(){
 		$(".rBox3Ulboxtwo").toggle();
 		$(".rBox3Ulinputtwo>img").toggle();
@@ -287,3 +307,17 @@ $(function(){
 		$(".gBox2one").show();
 	});
 });
+//红包
+//新增红包
+//$(function(){
+//	$(".rpacketClick").click(function(){
+//		$(".redpacketBox")show();
+//	});
+//	$(".rpacketno").click(function(){
+//		$(".redpacketBox")hide();
+//	});
+//	$(".rpacketyes").click(function(){
+//		$(".redpacketBox")hide();
+//		alert("已保存数据");
+//	});
+//});
