@@ -71,6 +71,21 @@ input,button,textarea,select{
 a{
 	-webkit-transition:all 0.5s linear;-moz-transition:all 0.5s linear;-ms-transition:all 0.5s linear;-o-transition:all 0.5s linear;
 }
+/*input、button、a标签定义的按钮尺寸的兼容性问题*/
+button, input[type="reset"], input[type="button"], input[type="submit"] {
+    line-height:normal !important;
+    *overflow:visible ;              /*ie7以下的button和input[type=button]随着字变宽的问题*/
+    -moz-box-sizing:content-box; 
+    -webkit-box-sizing:content-box; 
+    box-sizing:content-box;
+    -moz-padding-start:npx;
+    -moz-padding-end:npx;
+}
+button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner { /*去掉Firefox在私有属性里面额外设置的边框和留白*/
+	border:none; padding:0; 
+}  
+
 /*去掉点击框时自带的颜色*/
 input:focus,
 button:focus{
@@ -438,7 +453,7 @@ body{
 	display: none;
 }
 .box.active{
-				display: block;
+	display: block;
 }
 .list{
 	width:1080px;
@@ -531,7 +546,12 @@ body{
 	border: 1px solid #7D7D7D;
 	border-bottom: 0;
 }
-
+/**/
+.input20px{
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
 .dBox2box{
 	border: 1px solid #7D7D7D;
 	padding: 10px 10px;
@@ -598,7 +618,7 @@ body{
 }
 .dBox2boxList ul li:first-child,
 .dBox2boxList ul li:nth-of-type(2){
-	width: 138px !important;
+	width: 133px !important;
 	padding: 3px 0;
 	margin: 0 !important;
 }
@@ -687,7 +707,7 @@ body{
 	border-radius: 20px;
 	box-shadow:3px 3px 40px #EEEEEE;
 	background: #FFFFFF;
-	/*display: none;*/
+	display: none;
 }
 .cBoxAll fieldset{
 	margin-left: 15px;
@@ -696,10 +716,6 @@ body{
 .cBox3 label{
 	margin-left: 90px;
 }
-.couponMain{
-	/*display: none;*/
-}
-
 .cBox3Ultop li,
 .cBox3Ul li{
 	display: inline-block;
@@ -753,7 +769,6 @@ body{
 	text-align: right;
 	padding-right: 10px;
 }
-
 /*商品券（红包）部分结束*/
 
 /*满X优惠开始*/

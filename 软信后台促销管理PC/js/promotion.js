@@ -48,11 +48,11 @@
 						fragment.appendChild(li);
 						//$('<li data-value="' + i + '">' + i + '</li>').appendTo(fragment);
 					}
-					p.append(fragment);  //将临时容器添加到无序列表里面，一次添加效率高
+					p.append(fragment);  //将临时容器添加到无序列表里面，一次添加效率高；
 				});
 			});
 
-//点击菜单栏，显示不同页面
+//选项卡；
 $(function(){
 			$('.listtr td').on('click',function(){
 				$('.listtr td').removeClass('active');
@@ -62,139 +62,91 @@ $(function(){
 			});
 		});
 
-//点击新增按钮，显示折扣盒子的内容
+//折扣；
+//点击新增按钮，显示折扣盒子的内容；
 $(document).ready(function(){
-	$(".PromoBut").click(function(){
+//	$(".dBox3Table tr td:last-child a").addClass(".PromoWrite");
+	$(".PromoBut").click(function(){     //新增；
 		$(".discBox").show();
 	});
-});
-$(document).ready(function(){
-	$(".PromoWrite").click(function(){
+	$(".PromoWrite").click(function(){    //修改；
 		$(".discBox").show();
 	});
-});
-//折扣中的遮盖层部分
-//$(function(){
-//	$(".PromoBut").click(function(){
-//		var bh = $("body").height();
-//      var bw = $("body").width();
-//      $(".maskingLayer").css({
-//          height:bh,
-//          width:bw,
-//          display:"block"
-//      });
-//		$(".discBox").show();
-//	});
-//});
-$(document).ready(function(){
-	$(".Promoremove").click(function(){
-		$(".discBox").hide();
+	$(".Promoremove").click(function(){   //关闭；；
+		$(".discBox").hide(); 
 	});
-});
-$(document).ready(function(){
-	$(".Promoyes").click(function(){
+	$(".Promoyes").click(function(){      //保存；
 		$(".discBox").hide();
+		alert("已保存数据");              
 	});
 });
 
-//点击按钮，展开下拉列表
+//点击按钮，展开下拉列表；
 $(document).ready(function(){
 	$(".dBox2boxOpen1").click(function(){
 		$("#boxList1").toggle();
-		$(".dBox2boxOpen1>img").toggle();
+		$(".dBox2boxOpen1>img").toggle(); 
 	});
-});
-$(document).ready(function(){
 	$(".dBox2boxOpen6").click(function(){
 		$("#boxList6").toggle();
 		$(".dBox2boxOpen6>img").toggle();
 	});
-});
-$(document).ready(function(){
 	$(".dBox2boxOpen2").click(function(){
 		$("#boxList2").toggle();
 		$(".dBox2boxOpen2>img").toggle();
 	});
-});
-$(document).ready(function(){
 	$(".dBox2boxOpen3").click(function(){
 		$("#boxList3").toggle();
 		$(".dBox2boxOpen3>img").toggle();
 	});
-});
-$(document).ready(function(){
 	$(".dBox2boxOpen4").click(function(){
 		$("#boxList4").toggle();
 		$(".dBox2boxOpen4>img").toggle();
 	});
-});
-$(document).ready(function(){
 	$(".dBox2boxOpen5").click(function(){
 		$("#boxList5").toggle();
 		$(".dBox2boxOpen5>img").toggle();
 	});
 });
-
-//点击新增按钮，显示优惠券（红包）盒子的内容
+//折扣管理部分；
+//点击打钩；
 $(document).ready(function(){
-	$(".CouponBtn").click(function(){
+    $('.dBox3Ulbutton').click(function(){//给id为btn的元素添加点击事件；
+    $(this).toggleClass('active');//每次点击的时候，将当前的元素切换active样式；
+    });                              //如果有，则去掉，否则添加；
+});
+
+
+//优惠券；
+//点击新增按钮，显示优惠券盒子的内容；
+$(document).ready(function(){
+	$(".CouponBtn").click(function(){   //新增；
 		$(".coupBox").show();
 	});
-});
-$(document).ready(function(){
-	$(".Coupremove").click(function(){
+	$(".Coupremove").click(function(){  //关闭；
 		$(".coupBox").hide();
 	});
-});
-$(document).ready(function(){
-	$(".Coupyes").click(function(){
+	$(".Coupyes").click(function(){   //保存；
 		$(".coupBox").hide();
+		alert("已保存数据");
 	});
 });
 
-//点击新增按钮，显示满X优惠盒子的内容
+//满X优惠；
+//点击新增按钮，显示满X优惠盒子的内容；
 $(document).ready(function(){
 	$(".reachBtn").click(function(){
 		$(".reachBox").show();
 	});
-});
-$(document).ready(function(){
 	$(".reachremove").click(function(){
 		$(".reachBox").hide();
 	});
-});
-$(document).ready(function(){
 	$(".reachyes").click(function(){
 		$(".reachBox").hide();
+		alert("已保存数据");
 	});
 });
-//点击新增按钮，显示赠送盒子的内容
-$(document).ready(function(){
-	$(".giveBtu").click(function(){
-		$(".giveBox").show();
-	});
-});
-$(document).ready(function(){
-	$(".giveremove").click(function(){
-		$(".giveBox").hide();
-	});
-});
-$(document).ready(function(){
-	$(".giveyes").click(function(){
-		$(".giveBox").hide();
-	});
-});
-
-//赠送管理
-$(document).ready(function(){
-	$(".gBox3Ulboxone").css("display","none"); //隐藏
-	$(".gBox3Ulinput").click(function(){
-		$(".gBox3Ulboxone").toggle();
-		$(".gBox3Ulinput>img").toggle();
-		$(".gBox3Ulboxone").css("background","rgb(229,239,202)")
-	});
-});
-//满X优惠管理
+//满X优惠管理；
 $(document).ready(function(){
 	$(".rBox3Ulboxtwo").css("display","none");  //隐藏
 	$(".rBox3Ulinputtwo").click(function(){
@@ -204,120 +156,71 @@ $(document).ready(function(){
 	});
 });
 
-//折扣管理部分
-//点击打钩\
-$(document).ready(function(){
-    $('.dBox3Ulbutton').click(function(){//给id为btn的元素添加点击事件
-    $(this).toggleClass('active');//每次点击的时候，将当前的元素切换active样式
-    });                              //如果有，则去掉，否则添加
-});
 
-$(function(){
-	$(".dBox3Ulimg").click(function(){
-		$("input[name='imageselelct']").toggle();
-	});
-});
-
+//赠送；
+//点击新增按钮，显示赠送盒子的内容；
 $(document).ready(function(){
-	$(".dBox3Ulimg").click(function(){
-		$(".dBox3Ulimg").toggle();
+	$(".giveBtu").click(function(){      //新增
+		$(".giveBox").show();         
 	});
-});
-$(document).ready(function(){
-	$(".dBox3Ulimg1").click(function(){
-		$(".dBox3Ulimg1").toggle();
+	$(".giveremove").click(function(){   //关闭
+		$(".giveBox").hide();
 	});
-});
-$(document).ready(function(){
-	$(".dBox3Ulimg2").click(function(){
-		$(".dBox3Ulimg2").toggle();
-	});
-});
-$(document).ready(function(){
-	$(".dBox3Ulimg3").click(function(){
-		$(".dBox3Ulimg3").toggle();
-	});
-});
-$(document).ready(function(){
-	$(".dBox3Ulimg4").click(function(){
-		$(".dBox3Ulimg4").toggle();
-	});
-});
-$(document).ready(function(){
-	$(".dBox3Ulimg5").click(function(){
-		$(".dBox3Ulimg5").toggle();
-	});
-});
-$(document).ready(function(){
-	$(".dBox3Ulimg6").click(function(){
-		$(".dBox3Ulimg6").toggle();
-	});
-});
-$(document).ready(function(){
-	$(".dBox3Ulimg7").click(function(){
-		$(".dBox3Ulimg7").toggle();
+	$(".giveyes").click(function(){      //保存
+		$(".giveBox").hide();
+		alert("已保存数据");
 	});
 });
 
-//满X优惠中的优惠方式中，点击按钮删除项
-//第三列
-$(function(){
-	$(".rBox2twodel").click(function(){
-		$(".rBox2two").hide();
+//赠送管理；
+$(document).ready(function(){
+	$(".gBox3Ulboxone").css("display","none"); //隐藏
+	$(".gBox3Ulinput").click(function(){
+		$(".gBox3Ulboxone").toggle();
+		$(".gBox3Ulinput>img").toggle();
+		$(".gBox3Ulboxone").css("background","rgb(229,239,202)")
 	});
 });
-//第二列
+
+
+//红包；
+//新增红包；
 $(function(){
-	$(".rBox2onedel").click(function(){
-		$(".rBox2one").hide();
+	$(".rpacketClick").click(function(){  //新增
+		$(".redpacketBox").show();
+	});
+	$(".rpacketno").click(function(){    //关闭
+		$(".redpacketBox").hide();
+	});
+	$(".rpacketyes").click(function(){   //保存
+		$(".redpacketBox").hide();
+		alert("已保存数据");
 	});
 });
-$(function(){
-	$(".rBox2oneadd").click(function(){
-		$(".rBox2two").show();
-	})
-});
-//第一列
-$(function(){
-	$(".rBox2add").click(function(){
-		$(".rBox2one").show();
-	});
-});
-//赠送中的优惠方式中，点击按钮删除项
-//第三列
-$(function(){
-	$(".gBox2twodel").click(function(){
-		$(".gBox2two").hide();
-	});
-});
-//第二列
-$(function(){
-	$(".gBox2onedel").click(function(){
-		$(".gBox2one").hide();
-	});
-});
-$(function(){
-	$(".gBox2oneadd").click(function(){
-		$(".gBox2two").show();
-	})
-});
-//第一列
-$(function(){
-	$(".gBox2add").click(function(){
-		$(".gBox2one").show();
-	});
-});
-//红包
-//新增红包
-//$(function(){
-//	$(".rpacketClick").click(function(){
-//		$(".redpacketBox")show();
-//	});
-//	$(".rpacketno").click(function(){
-//		$(".redpacketBox")hide();
-//	});
-//	$(".rpacketyes").click(function(){
-//		$(".redpacketBox")hide();
-//		alert("已保存数据");
-//	});
-//});
+
+//删除选中；
+$(".markbtn .deletebtn").click(function(){
+$(".table_box tr").each(function(){
+if($(this).find("input").attr("checked")&&$(this).index()!=0){
+$(this).remove();
+}
+})
+})
+$("#allcheckbox").click(function(){
+if($(this).attr("checked")){
+$(".table_box td input").attr("checked","checked");
+}else{
+$(".table_box td input").attr("checked","")
+}
+})
+
+$(".table_box input").not("#allcheckbox").click(function(){
+$(".table_box input").not("#allcheckbox").each(function(){
+if($(".table_box input[type='checkbox']:checked").not("#allcheckbox").length==$(".table_box tr").not("#titletr").length){
+$("#allcheckbox").attr("checked","checked");
+}else{
+$("#allcheckbox").attr("checked","");
+}
+})
+
+})
