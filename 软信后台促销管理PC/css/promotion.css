@@ -49,6 +49,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,button,textarea
 table{
 	border-collapse:collapse;border-spacing:0;
 }
+
 fieldset,img{
 	border:0;
 }
@@ -81,9 +82,10 @@ button, input[type="reset"], input[type="button"], input[type="submit"] {
     -moz-padding-start:npx;
     -moz-padding-end:npx;
 }
+/*去掉Firefox在私有属性里面额外设置的边框和留白*/
 button::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner { /*去掉Firefox在私有属性里面额外设置的边框和留白*/
-	border:none; padding:0; 
+input[type="button"]::-moz-focus-inner {  
+	border:none; padding:0;   
 }  
 
 /*去掉点击框时自带的颜色*/
@@ -264,17 +266,6 @@ body{
 	margin-right: 10px;
 	background-size: 10px 10px;
 }
-/*遮盖层*/
-/*.maskingLayer{
-	display:none;  
-    background:#000;  
-    position:absolute;  
-    top:0;  
-    left:0;  
-    z-index:9999;  
-    opacity:0.5;                        /*背景的透明度:(Firefox适用； */
-    /*filter:alpha(opacity =50);        /*  背景的透明度:(IE适用)；  */
-}/*/
 
 /*header开始*/
 #libg {
@@ -285,7 +276,9 @@ body{
 	font-size:12px; width:125px; text-align:left;
 }
 .bj1{
+	position: relative;
 	height: 30px;
+	width: 100%;
 	margin: 0 auto;
 	background-color: #eeeeee;
 }
@@ -357,8 +350,7 @@ body{
 	margin: 0 auto;
 	background-color: #ff6600;
 }
-.bj3 ul {
-}
+
 .bj3 ul li {
 	float: left;
 	list-style-type: none;

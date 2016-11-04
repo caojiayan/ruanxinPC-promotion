@@ -960,11 +960,11 @@
 		    				<div class="dBox3title markbtn">
 		    					<span class="cright">折扣管理</span>
 		    					8
-		    					<a href="#" class="deletebtn"><img src="img/trashW.png" align="center"></a>
+		    					<a href="#" id="delBtn1"><img src="img/trashW.png" align="center"></a>
 		    				</div>
 		    				<!--折扣管理盒子开始-->
 		    			    <div class="dBox3Table table_box">
-		    				    <table>
+		    				    <table id="table1">
 		    						<tr id="titletr">
 		    							<td>备注</td>
 		    							<td>自动化</td>
@@ -973,7 +973,7 @@
 		    							<td>有效期</td>
 		    							<td>
 		    								<label style="padding-right: 0;">
-			        					        <input type="checkbox" id="allcheckbox"/> <!-- 全选按钮-->
+			        					        <input type="checkbox" id="checkall1"/> <!-- 全选按钮-->
 			        					        <span style="font-size: 12px;">全选</span> 
 			        				        </label>
 		    							</td>
@@ -985,7 +985,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test1[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -996,7 +996,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test1[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1007,7 +1007,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test1[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1018,7 +1018,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test1[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1029,7 +1029,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test1[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1040,7 +1040,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test1[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1051,7 +1051,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test1[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1062,7 +1062,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test1[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1254,10 +1254,12 @@
 		    			<div class="dBox3title">
 		    				<span class="cright">优惠券管理</span>
 		    					8
-		    				<img src="img/trashW.png" align="center">
+		    				<a href="javascript:void();" id="delBtn2">
+		    				    <img src="img/trashW.png" align="center">
+		    				</a>
 		    			</div>
 		    			<div class="dBox3Table">
-		    				<table>
+		    				<table id="table2">
 		    					<tbody>
 		    						<tr>
 		    							<td>类型</td>
@@ -1268,7 +1270,7 @@
 		    							<td>有效期</td>
 		    							<td>
 		    								<label style="padding-right: 0;">
-			        					        <input type="checkbox"/> <!-- 全选按钮-->
+			        					        <input type="checkbox" id="checkall2"/> <!-- 全选按钮-->
 			        					        <span style="font-size: 12px;">全选</span> 
 			        				        </label>
 		    							</td>
@@ -1283,7 +1285,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test2[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1297,7 +1299,7 @@
 		    							<td>5个商品</td>
 		    							<td>7天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test2[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1311,7 +1313,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test2[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1325,7 +1327,7 @@
 		    							<td>5个商品</td>
 		    							<td>7天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test2[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1339,7 +1341,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test2[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1353,7 +1355,7 @@
 		    							<td>5个商品</td>
 		    							<td>7天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test2[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1367,7 +1369,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test2[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1381,7 +1383,7 @@
 		    							<td>5个商品</td>
 		    							<td>7天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test2[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1693,10 +1695,12 @@
 		    				<div class="rBoxadmtitle">
 		    					<span class="cright">满X优惠管理</span>
 		    					6
-		    					<img src="img/trashW.png" align="center">
+		    					<a href="javascript:void();" id="delBtn3">
+		    					    <img src="img/trashW.png" align="center">
+		    					</a>
 		    				</div>
 		    				<div class="dBox3Table">
-		    				<table>
+		    				<table id="table3">
 		    					<tbody>
 		    						<tr>
 		    							<td>类型</td>
@@ -1706,7 +1710,7 @@
 		    							<td>有效期</td>
 		    							<td>
 		    								<label style="padding-right: 0;">
-			        					        <input type="checkbox"/> <!-- 全选按钮-->
+			        					        <input type="checkbox" id="checkall3"/> <!-- 全选按钮-->
 			        					        <span style="font-size: 12px;">全选</span> 
 			        				        </label>
 		    							</td>
@@ -1718,7 +1722,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test3[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1733,7 +1737,7 @@
 		    								    <img src="img/up.png" align="center" style="display: none;">
 		    								    <img src="img/down.png" align="center">
 		    							    </a>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test3[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1744,7 +1748,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test3[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1755,7 +1759,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test3[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1766,7 +1770,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test3[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1777,7 +1781,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test3[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -1788,7 +1792,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test3[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -2051,11 +2055,13 @@
 		    			<div class="gBoxadmtitle">
 		    				<span class="cright">赠送管理</span>
 		    				6
-		    				<img src="img/trashW.png" align="center">
+		    				<a href="javascript:void();" id="delBtn4">
+		    				    <img src="img/trashW.png" align="center">
+		    				</a>
 		    			</div>
 		    			<!--赠送管理部分开始-->
 		    			<div class="dBox3Table">
-		    				<table>
+		    				<table id="table4">
 		    					<tbody>
 		    						<tr>
 		    							<td>类型</td>
@@ -2065,7 +2071,7 @@
 		    							<td>有效期</td>
 		    							<td>
 		    								<label style="padding-right: 0;">
-			        					        <input type="checkbox"/> <!-- 全选按钮-->
+			        					        <input type="checkbox"/ id="checkall4"> <!-- 全选按钮-->
 			        					        <span style="font-size: 12px;">全选</span> 
 			        				        </label>
 		    							</td>
@@ -2077,7 +2083,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test4[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -2092,7 +2098,7 @@
 		    								    <img src="img/up.png" align="center" style="display:none;">
 		    								    <img src="img/down.png" align="center">
 		    							    </a>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test4[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -2103,7 +2109,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test4[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -2114,7 +2120,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test4[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -2125,7 +2131,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test4[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -2136,7 +2142,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test4[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -2147,7 +2153,7 @@
 		    							<td>6个商品</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test4[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    						    </td>
 		    					    </tr>
@@ -2207,10 +2213,12 @@
 		    		<div class="dBox3">
 		    			<div class="dBox3title">
 		    				<span class="cright">红包管理</span>
-		    				<img src="img/trashW.png" align="center">
+		    				<a href="javascript:void();" id="delBtn5">
+		    				    <img src="img/trashW.png" align="center">
+		    				</a>
 		    			</div>
 		    			<div class="dBox3Table">
-		    				<table>
+		    				<table id="table5">
 		    					<tbody>
 		    						<tr>
 		    							<td>发放方式</td>
@@ -2218,7 +2226,7 @@
 		    							<td>有效期</td>
 		    							<td>
 		    								<label style="padding-right: 0;">
-			        					        <input type="checkbox"/> <!-- 全选按钮-->
+			        					        <input type="checkbox" id="checkall5"/> <!-- 全选按钮-->
 			        					        <span style="font-size: 12px;">全选</span> 
 			        				        </label>
 		    							</td>
@@ -2228,7 +2236,7 @@
 		    							<td>1元</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test5[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -2237,7 +2245,7 @@
 		    							<td>1元</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test5[]"/>
 		    								<img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -2246,7 +2254,7 @@
 		    							<td>1元</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test5[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -2255,7 +2263,7 @@
 		    							<td>1元</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test5[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -2264,7 +2272,7 @@
 		    							<td>1元</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test5[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>
@@ -2273,7 +2281,7 @@
 		    							<td>1元</td>
 		    							<td>3天</td>
 		    							<td>
-		    								<input type="checkbox"/>
+		    								<input type="checkbox" name="test5[]"/>
 		    								<a href="#"><img src="img/writeW.png" align="center"></a>
 		    							</td>
 		    						</tr>

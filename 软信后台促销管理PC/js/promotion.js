@@ -198,29 +198,95 @@ $(function(){
 	});
 });
 
-//删除选中；
-$(".markbtn .deletebtn").click(function(){
-$(".table_box tr").each(function(){
-if($(this).find("input").attr("checked")&&$(this).index()!=0){
-$(this).remove();
-}
-})
-})
-$("#allcheckbox").click(function(){
-if($(this).attr("checked")){
-$(".table_box td input").attr("checked","checked");
-}else{
-$(".table_box td input").attr("checked","")
-}
-})
-
-$(".table_box input").not("#allcheckbox").click(function(){
-$(".table_box input").not("#allcheckbox").each(function(){
-if($(".table_box input[type='checkbox']:checked").not("#allcheckbox").length==$(".table_box tr").not("#titletr").length){
-$("#allcheckbox").attr("checked","checked");
-}else{
-$("#allcheckbox").attr("checked","");
-}
-})
-
-})
+//管理列表中的全选与取消全选
+(function($){
+    $.fn.checkall = function(options){
+        var defaults = {chname:"checkname[]", callback:function(){}},
+        options = $.extend(defaults, options),
+        $obj = $(this),
+        $items = $("input[name='"+options.chname+"']"),
+        checkedItem = 0;
+        $items.click(function(){
+            if($items.filter(":checked").length === $items.length){
+                $obj.attr("checked",true);
+            }else{
+                $obj.removeAttr("checked");
+            }
+            checkedItem = $items.filter(":checked").length;
+            if(typeof options.callback === 'function') options.callback(checkedItem);
+        });
+        return $obj.each(function(){
+            $(this).click(function(){
+                if($(this).attr('checked')){
+                    $items.attr("checked",true);
+                }else{
+                    $items.removeAttr("checked");
+                }
+                checkedItem = $items.filter(":checked").length;
+                if(typeof options.callback === 'function') options.callback(checkedItem);
+            });
+        });
+    }
+})(jQuery);
+//折扣管理input的全选
+$(function(){
+    $("#checkall1").checkall({chname:"test1[]", callback: function(e){}});
+});
+$(function(){
+    $("#checkall2").checkall({chname:"test2[]", callback: function(e){}});
+});
+$(function(){
+    $("#checkall3").checkall({chname:"test3[]", callback: function(e){}});
+});
+$(function(){
+    $("#checkall4").checkall({chname:"test4[]", callback: function(e){}});
+});
+$(function(){
+    $("#checkall5").checkall({chname:"test5[]", callback: function(e){}});
+});
+//点击删除
+$(function(){
+	$("#delBtn1").click(function () {
+        $("#table1").find("input[name='test1[]']").each(function () {
+            if($(this).prop("checked")) {
+               $(this).parent().parent().remove();
+            }
+        });
+    });
+});
+$(function(){
+	$("#delBtn2").click(function () {
+        $("#table2").find("input[name='test2[]']").each(function () {
+            if($(this).prop("checked")) {
+               $(this).parent().parent().remove();
+            }
+        });
+    });
+});
+$(function(){
+	$("#delBtn3").click(function () {
+        $("#table3").find("input[name='test3[]']").each(function () {
+            if($(this).prop("checked")) {
+               $(this).parent().parent().remove();
+            }
+        });
+    });
+});
+$(function(){
+	$("#delBtn4").click(function () {
+        $("#table4").find("input[name='test4[]']").each(function () {
+            if($(this).prop("checked")) {
+               $(this).parent().parent().remove();
+            }
+        });
+    });
+});
+$(function(){
+	$("#delBtn5").click(function () {
+        $("#table5").find("input[name='test5[]']").each(function () {
+            if($(this).prop("checked")) {
+               $(this).parent().parent().remove();
+            }
+        });
+    });
+});
